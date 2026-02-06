@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>puzzle</title>
+   <img src="./images.html/money.png" alt="Description">
+  <a>first one was really simple, just finding a binary decoder,</a>
+  <a>now it will start to get intricate
+
+
+    <h1>uwuybrsffbgjowwgwozbgpqwnujowwgpihlgppylpppyulivcsfnhmcmyyrcvyfrv</h1>
+
+  </a>
+
+</head>
+<body>
+   
+  <h2>paaaassword?</h2>
+  <input id="pw" type="password" placeholder="get it correct this time">
+  <button id="go">Go</button>
+  <div id="msg"></div>
+
+  <script>
+    const PASSWORD = 'iihuifesbiuvbsduibviubdsuivbsdubvdsubcusdbcubzuiyztzuijaklnjjksnc';
+
+    const pw = document.getElementById('pw');
+    const btn = document.getElementById('go');
+    const msg = document.getElementById('msg');
+
+    function check() {
+      if (pw.value === PASSWORD) {
+        window.location.href = '3rdone.html';
+      } else {
+        msg.textContent = 'WRONG!';
+        pw.value = '';
+        pw.focus();2
+      }
+    }
+
+    btn.addEventListener('click', check);
+    pw.addEventListener('keydown', e => { if (e.key === 'Enter') check(); });
+  </script>
+</body>
+</html>
